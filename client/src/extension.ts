@@ -16,7 +16,7 @@ export function activate(context: ExtensionContext) {
   };
 
   const clientOptions: LanguageClientOptions = {
-    documentSelector: [{scheme: "file", language: "sql"}],
+    documentSelector: [{scheme: "untitled", language: "sql"}],
     synchronize: {
       configurationSection: "tsqllint",
       fileEvents: workspace.createFileSystemWatcher("**/.clientrc"),
